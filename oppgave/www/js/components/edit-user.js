@@ -34,15 +34,15 @@ class EditUser extends LitElement {
     <label for="newpwd">Nytt Passord</label>
     <input type="password" class="form-control" id="pwd" name="pwd" type="text" value="">
 </div>
-<input type="submit" @click=${this.updateUser} id="submitForm" name="editUser" class="btn btn-success mt-4 ml-2" value="Endre Info"></input>
+<input type="submit" @click=${this.updateUser} id="submitForm" name="editUser" class="btn btn-success mt-4 ml-2" value="Endre"></input>
 </form>
   `;
 }
 
-updateUser(e) {
+updateUser(b) {
   //data fra HTML form
   const dataForm = new FormData(e.target.form);
-  console.log(e)
+  console.log(b)
   fetch('api/updateUser.php', {
    method: 'POST',
    body: dataForm
