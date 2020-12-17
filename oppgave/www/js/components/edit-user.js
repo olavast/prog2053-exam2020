@@ -10,8 +10,7 @@ class EditUser extends LitElement {
 
   return html`
   <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  </head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">  </head>
   <form onsubmit="javascript: return false;" id="userForm" method="POST">
   <div class="form-group" style="width: 30rem;">
     <label for="email">Email</label>
@@ -40,6 +39,7 @@ class EditUser extends LitElement {
 }
 
 updateUser(b) {
+  //data fra HTML form
   const dataForm = new FormData(e.target.form);
   console.log(b)
   fetch('api/updateUser.php', {
