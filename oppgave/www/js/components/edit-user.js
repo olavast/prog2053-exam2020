@@ -13,7 +13,6 @@ class EditUser extends LitElement {
     <style>
       label{
     display: inline-block;
-    float: left;
     clear: right;
     width: 250px;
     text-align: left;
