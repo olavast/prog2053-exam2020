@@ -1,4 +1,4 @@
-## Change users Name and password by using the email of the user (uname in php) uid stays the same 
+// Change users Name and password by using the email of the user (uname in php) uid stays the same 
 import { LitElement, html, css } from "../../node_modules/lit-element/lit-element.js";
 
 class EditUser extends LitElement {
